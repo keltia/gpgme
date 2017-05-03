@@ -23,7 +23,6 @@ install:
   - copy "%GPG_DIR%\lib\libassuan.imp" "%GPG_DIR%\lib\libassuan.a"
   - copy "%GPG_DIR%\lib\libgpgme.imp" "%GPG_DIR%\lib\libgpgme.a"
   - set PATH=%GOPATH%\bin;%GOROOT%\bin;%GPG_DIR%\bin;C:\MinGW\bin;%PATH%
-  - C:\cygwin\bin\sed -i 's/"GPG_AGENT_INFO"/"GPG_AGENT_INFO="/;s/C.unsetenv(v)/C.putenv(v)/' %APPVEYOR_BUILD_FOLDER%\gpgme.go
 
 test_script:
   - go test -v github.com/proglottis/gpgme
