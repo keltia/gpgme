@@ -1,9 +1,6 @@
 ---
 version: 0.{build}
 platform: x86
-branches:
-  only:
-    - master
 
 clone_folder: c:\gopath\src\github.com\proglottis\gpgme
 
