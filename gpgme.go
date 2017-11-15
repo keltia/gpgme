@@ -47,9 +47,9 @@ const (
 	ProtocolAssuan   Protocol = C.GPGME_PROTOCOL_ASSUAN
 	ProtocolG13      Protocol = C.GPGME_PROTOCOL_G13
 	ProtocolUIServer Protocol = C.GPGME_PROTOCOL_UISERVER
-	ProtocolSpawn    Protocol = C.GPGME_PROTOCOL_SPAWN
-	ProtocolDefault  Protocol = C.GPGME_PROTOCOL_DEFAULT
-	ProtocolUnknown  Protocol = C.GPGME_PROTOCOL_UNKNOWN
+	// ProtocolSpawn    Protocol = C.GPGME_PROTOCOL_SPAWN
+	ProtocolDefault Protocol = C.GPGME_PROTOCOL_DEFAULT
+	ProtocolUnknown Protocol = C.GPGME_PROTOCOL_UNKNOWN
 )
 
 type PinEntryMode int
@@ -69,7 +69,7 @@ const (
 	EncryptNoEncryptTo EncryptFlag = C.GPGME_ENCRYPT_NO_ENCRYPT_TO
 	EncryptPrepare     EncryptFlag = C.GPGME_ENCRYPT_PREPARE
 	EncryptExceptSign  EncryptFlag = C.GPGME_ENCRYPT_EXPECT_SIGN
-	EncryptNoCompress  EncryptFlag = C.GPGME_ENCRYPT_NO_COMPRESS
+	// EncryptNoCompress  EncryptFlag = C.GPGME_ENCRYPT_NO_COMPRESS
 )
 
 type HashAlgo int
@@ -551,9 +551,9 @@ type ExportModeFlags uint
 const (
 	ExportModeExtern  ExportModeFlags = C.GPGME_EXPORT_MODE_EXTERN
 	ExportModeMinimal ExportModeFlags = C.GPGME_EXPORT_MODE_MINIMAL
-	ExportModeSecret  ExportModeFlags = C.GPGME_EXPORT_MODE_SECRET
-	ExportModeRaw     ExportModeFlags = C.GPGME_EXPORT_MODE_RAW
-	ExportModePKCS12  ExportModeFlags = C.GPGME_EXPORT_MODE_PKCS12
+	// ExportModeSecret  ExportModeFlags = C.GPGME_EXPORT_MODE_SECRET
+	// ExportModeRaw     ExportModeFlags = C.GPGME_EXPORT_MODE_RAW
+	// ExportModePKCS12  ExportModeFlags = C.GPGME_EXPORT_MODE_PKCS12
 )
 
 func (c *Context) Export(pattern string, mode ExportModeFlags, data *Data) error {
