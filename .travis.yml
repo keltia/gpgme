@@ -13,7 +13,7 @@ env:
     - CGO_LDFLAGS=-L/usr/local/lib
 
 before_install:
-- apt-get install libgpgme-dev
+- sudo apt-get install libgpgme-dev
 
 install:
 - true #do not execute "go get ./..." as it will fail with the examples
