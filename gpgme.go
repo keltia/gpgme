@@ -83,7 +83,7 @@ const (
 	KeyListModeExtern       KeyListMode = C.GPGME_KEYLIST_MODE_EXTERN
 	KeyListModeSigs         KeyListMode = C.GPGME_KEYLIST_MODE_SIGS
 	KeyListModeSigNotations KeyListMode = C.GPGME_KEYLIST_MODE_SIG_NOTATIONS
-	KeyListModeWithSecret   KeyListMode = C.GPGME_KEYLIST_MODE_WITH_SECRET
+	// KeyListModeWithSecret   KeyListMode = C.GPGME_KEYLIST_MODE_WITH_SECRET
 	KeyListModeEphemeral    KeyListMode = C.GPGME_KEYLIST_MODE_EPHEMERAL
 	KeyListModeModeValidate KeyListMode = C.GPGME_KEYLIST_MODE_VALIDATE
 )
